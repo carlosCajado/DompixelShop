@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use GrahamCampbell\ResultType\Success;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class ProductControler extends Controller
 {
@@ -20,15 +22,25 @@ class ProductControler extends Controller
      */
     public function create()
     {
-        //
+        return view('products.create');
     }
 
     /**
      * Store a newly created resource in storage.
+     * 
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+           'nome'=> 'required',
+           'descricao'=> 'required',
+           'preco'=> 'required',
+           'quantidade'=> 'required'
+        ]);
+
+        Product::create($request->all());
+        // var_dump($request->all());die();
+        return redirect()->route('products.index')->with('Sucesso','Produto Cadastrado!' );
     }
 
     /**
