@@ -35,7 +35,7 @@
                 <tr>
                     <td>{{ $product->id }}</td>
                     <td>{{ $product->nome }}</td>
-                    <td>{{ $product->quantidade }} un</td>
+                    <td>{{ $product->quantidade }} Unidades</td>
                     <td>R$ {{ number_format($product->preco, 2, ',', '.') }}</td>
                     <td>{{ $product->descricao }}</td>
                     <td>
