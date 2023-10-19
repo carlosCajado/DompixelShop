@@ -1,5 +1,6 @@
 @extends('products.productsindex')
 @section('content')
+<link rel="stylesheet" href="{{ asset('css/create.css') }}"> 
     <div>
     @if ($errors->any())
             <div class="alert alert-danger">

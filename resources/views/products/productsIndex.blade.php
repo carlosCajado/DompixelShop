@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="{{ asset('css/components.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css.map.css') }}">
     <link rel="stylesheet" href="{{ asset('css/app.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/create.css') }}">
     <title>DompixelShop</title>
 </head>
 <body>
