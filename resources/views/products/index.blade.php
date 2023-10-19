@@ -4,7 +4,7 @@
 <div class="row">
     <div class="col-lg-12">
         <div class="pull-left">
-            <h2>Produtos Cadastrados</h2>
+            <h2>Catálogo de Produtos</h2>
         </div>
         <div class="pull-right">
             <a class="btn btn-success" href="{{ route('products.create') }}">Adicionar Novo Produto</a>
